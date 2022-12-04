@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     /// <summary>
-    /// 
+    /// Represents one tournament, with all of the rounds, matchups, prizes and outcomes.
     /// </summary>
     public class TournamentModel
     {
@@ -32,7 +32,7 @@ namespace TrackerLibrary
         public List<PrizeModel> Prizes { get; set; } = new List<PrizeModel>();
 
         /// <summary>
-        /// 
+        /// The matchups per round.
         /// </summary>
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>(); // need to rename
     }
