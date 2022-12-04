@@ -17,7 +17,12 @@ namespace TrackerUI
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TournamentDashboardForm());
+
+            // Initailze the database connections
+            TrackerLibrary.GlobalConfig.InitializeConnections(true, true);
+            Application.Run(new CreatePrizeForm()); // just want to see this working
+
+            //Application.Run(new TournamentDashboardForm()); // real startup form
         }
     }
 }
