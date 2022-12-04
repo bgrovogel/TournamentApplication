@@ -1,0 +1,3 @@
+
+- Using .net and Visual Studio, we will construct a tournament tracker application that is fit to launch.
+- The application uses Winforms, a class library, events, SQL database, text file data storage (in CSV format), custom events and more. 
